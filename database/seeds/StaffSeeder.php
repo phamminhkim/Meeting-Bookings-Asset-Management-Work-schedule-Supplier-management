@@ -1,0 +1,232 @@
+<?php
+
+use App\User;
+use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\Hash;
+
+class StaffSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        $users = array(
+             
+            array(
+                "id" => null,
+                "name" => "Nguyễn Ngọc Hùng",
+                "username" => "1000691",
+                "company_id" => "6000",
+                "sloc_id" => "",
+                "department_id" => 1,
+                "email" => "hung.nn@thienlongvn.com",
+                "email_verified_at" => null,
+                "password" => Hash::make('123456'),
+                "active" => 1,
+                "remember_token" => null,
+                "deleted_at" => null,
+                "created_at" => "2021-05-04 11:01:14",
+                "updated_at" => "2021-05-28 14:06:21",
+                "avatar" => "/avatars/609244b032f0a.jpeg",
+                "manager" => null,
+                "gender" => "1",
+            ),
+            array(
+                "id" => null,
+                "name" => "Dương Minh Hoà",
+                "username" => "1000692",
+                "company_id" => "1000",
+                "sloc_id" => "",
+                "department_id" => null,
+                "email" => "hoa.dm@thienlongvn.com",
+                "email_verified_at" => null,
+                "password" => Hash::make('123456'),
+                "active" => 1,
+                "remember_token" => null,
+                "deleted_at" => null,
+                "created_at" => "2021-05-04 11:02:11",
+                "updated_at" => "2021-05-04 11:05:28",
+                "avatar" => "img/avata-default.png",
+                "manager" => null,
+                "gender" => "1",
+            ),
+            array(
+                "id" => null,
+                "name" => "Nguyễn Đức Hạnh",
+                "username" => "1000778",
+                "company_id" => "1000",
+                "sloc_id" => null,
+                "department_id" => 7,
+                "email" => "hanh.nd@thienlongvn.com",
+                "email_verified_at" => null,
+                "password" => Hash::make('123456'),
+                "active" => 1,
+                "remember_token" => null,
+                "deleted_at" => null,
+                "created_at" => "2021-05-05 14:46:56",
+                "updated_at" => "2021-06-16 08:15:44",
+                "avatar" => "/avatars/60c07a30f03ce.jpeg",
+                "manager" => null,
+                "gender" => "1",
+            ),
+            array(
+                "id" => null,
+                "name" => "Nguyễn Xuân Trí",
+                "username" => "1000149",
+                "company_id" => "1000",
+                "sloc_id" => null,
+                "department_id" => 7,
+                "email" => "tri.nx@thienlongvn.com",
+                "email_verified_at" => null,
+                "password" => Hash::make('123456'),
+                "active" => 1,
+                "remember_token" => null,
+                "deleted_at" => null,
+                "created_at" => "2021-05-05 14:52:10",
+                "updated_at" => "2021-05-05 15:09:20",
+                "avatar" => "img/avata-default.png",
+                "manager" => null,
+                "gender" => "1",
+            ),
+            
+             
+           
+           
+            array(
+                "id" => 220,
+                "name" => "Lê Hữu Danh",
+                "username" => "1000648",
+                "company_id" => "1000",
+                "sloc_id" => null,
+                "department_id" => 7,
+                "email" => "danh.lh@thienlongvn.com",
+                "email_verified_at" => null,
+                "password" => Hash::make('123456'),
+                "active" => 1,
+                "remember_token" => null,
+                "deleted_at" => null,
+                "created_at" => "2021-05-29 12:02:49",
+                "updated_at" => "2021-05-29 12:08:12",
+                "avatar" => "img/avata-default.png",
+                "manager" => null,
+                "gender" => "1",
+            ),
+            array(
+                "id" => 221,
+                "name" => "Trần Phạm Tín",
+                "username" => "1002755",
+                "company_id" => "1000",
+                "sloc_id" => null,
+                "department_id" => 7,
+                "email" => "tin.tp@thienlongvn.com",
+                "email_verified_at" => null,
+                "password" => Hash::make('123456'),
+                "active" => 1,
+                "remember_token" => null,
+                "deleted_at" => null,
+                "created_at" => "2021-05-29 12:07:48",
+                "updated_at" => "2021-05-29 12:07:48",
+                "avatar" => "img/avata-default.png",
+                "manager" => null,
+                "gender" => "1",
+            ),
+            array(
+                "id" => 222,
+                "name" => "Phan Huỳnh Tố Quyên",
+                "username" => "1002422",
+                "company_id" => "1000",
+                "sloc_id" => null,
+                "department_id" => 6,
+                "email" => "quyen.pht@thienlongvn.com",
+                "email_verified_at" => null,
+                "password" => Hash::make('123456'),
+                "active" => 1,
+                "remember_token" => null,
+                "deleted_at" => null,
+                "created_at" => "2021-05-29 13:21:18",
+                "updated_at" => "2021-05-29 13:21:18",
+                "avatar" => "img/avata-default.png",
+                "manager" => null,
+                "gender" => "0",
+            ),
+            array(
+                "id" => 223,
+                "name" => "Lâm Thục My",
+                "username" => "1001551",
+                "company_id" => "1000",
+                "sloc_id" => null,
+                "department_id" => 6,
+                "email" => "my.lt@thienlongvn.com",
+                "email_verified_at" => null,
+                "password" => Hash::make('123456'),
+                "active" => 1,
+                "remember_token" => null,
+                "deleted_at" => null,
+                "created_at" => "2021-05-29 13:22:12",
+                "updated_at" => "2021-05-29 13:22:12",
+                "avatar" => "img/avata-default.png",
+                "manager" => null,
+                "gender" => "0",
+            ),
+            array(
+                "id" => 224,
+                "name" => "Nguyễn Ngọc Nhơn",
+                "username" => "1001363",
+                "company_id" => "1000",
+                "sloc_id" => null,
+                "department_id" => 6,
+                "email" => "nhon.nn@thienlongvn.com",
+                "email_verified_at" => null,
+                "password" => Hash::make('123456'),
+                "active" => 1,
+                "remember_token" => null,
+                "deleted_at" => null,
+                "created_at" => "2021-05-29 13:22:43",
+                "updated_at" => "2021-05-29 13:22:43",
+                "avatar" => "img/avata-default.png",
+                "manager" => null,
+                "gender" => "1",
+            ),
+          
+            array(
+                "id" => 225,
+                "name" => "Trần Phương Nga",
+                "username" => "1000804",
+                "company_id" => "1000",
+                "sloc_id" => null,
+                "department_id" => 6,
+                "email" => "nga.tp@thienlongvn.com",
+                "email_verified_at" => null,
+                "password" => Hash::make('123456'),
+                "active" => 1,
+                "remember_token" => null,
+                "deleted_at" => null,
+                "created_at" => "2021-05-29 13:22:43",
+                "updated_at" => "2021-05-29 13:22:43",
+                "avatar" => "img/avata-default.png",
+                "manager" => null,
+                "gender" => "0",
+            ),
+        );
+
+        foreach ($users as $user) {
+
+            $u = User::where('username', $user['username'])->first();
+            if (!$u) {
+                User::create([
+                    'name' => $user['name'],
+                    'company_id' => $user['company_id'],
+                    'username' => $user['username'],
+                    'email' => $user['email'],
+                    'password' => Hash::make('123456'),
+                    'gender' => $user['gender'],
+                    "active" => 1,
+                ]);
+            }
+
+        }
+    }
+}

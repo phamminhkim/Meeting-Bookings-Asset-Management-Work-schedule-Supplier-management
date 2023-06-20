@@ -1,0 +1,43 @@
+{
+    "Đề nghị thanh toán": "Payment request",
+    "Đề nghị tạm ứng": "Request for advance",
+    "Quyết toán tạm ứng": "Advance payment voucher",
+    "Chi phí tiếp khách": "Guest cost",
+    "Yêu cầu mới": "New request",
+    "Đang xử lý": "Processing",
+    "Đã thanh toán": "Paid",
+    "Đã huỷ": "Canceled",
+    "Duyệt hoàn tất": "Completed approved",
+    "Vui lòng chọn 1 dòng dữ liệu": "Please select 1 data line",
+    "Vui lòng chọn dòng dữ liệu": "Please select data line",
+    "Xác nhận xoá": "Confirm delete",
+    "Xác nhận huỷ": "Confirm cancel",
+    "Trong ngân sách": "In the budger",
+    "Ngoài ngân sách": "Out of budget",
+    "Vượt ngân sách": "Over budget",
+    "Không thuộc ngân sách": "Not on budget",
+    "Phòng ban duyệt": "Approval Department",
+    "Kế toán duyệt": "Approved accountant",
+    "HĐ Số tiền cố định": "Contract Fixed amount",
+    "HĐ phát sinh theo chu kỳ": "Contracts arise cyclically",
+    "HĐ nguyên tắc": "Principles contract",
+    "Ban Lãnh Đạo": "Board of Directors",
+    "Thanh toán đặc biệt": "Special payment",
+    "Thanh toán": "Payment",
+    "Thanh toán NVL": "Payment Materials",
+    "Số tiền đề nghị nhỏ hơn số tiền chứng từ": "The proposed amount is less than the voucher amount",
+    "Duyệt vượt ngoài NS": "Approve over/out of budget",
+    "Duyệt ngân sách": "Budget approval",
+    "Tờ trình": "Report approval",
+    "Ngoài / Vượt ngân sách": "Over/out of budget",
+    "Trình duyệt giá": "Trình duyệt giá",
+    "Tạo mới": "Create new",
+    "Đã hủy": "Canceled",
+    "Tổng": "Total",
+    "anh": "Mr.",
+    "chị": "Ms"
+
+
+
+
+}

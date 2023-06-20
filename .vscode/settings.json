@@ -1,0 +1,30 @@
+{
+    "vetur.format.defaultFormatter.html": "none",
+    "vetur.format.enable": false,
+    "sqltools.connections": [
+        {
+            "database": "OnlineShop",
+            "dialect": "MSSQL",
+            "name": "ITER-HUNGNN",
+            "password": "sa",
+            "port": 1433,
+            "server": "localhost",
+            "username": "sa",
+            "driver": "MSSQL"
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "cnn_tlgportal",
+            "group": "DigitalTLG",
+            "database": "tlgportal",
+            "username": "root",
+            "password": ""
+        }
+    ]
+}

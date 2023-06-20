@@ -1,0 +1,83 @@
+<?php
+namespace App\Repositories\comment;
+
+use App\Models\car\Car;
+use App\Models\document\Document;
+use App\Models\issue\Issue;
+use App\Models\managerprice\PriceReq;
+use App\Models\payment\Payrequest;
+use App\Models\shared\Comment;
+use App\Ultils\Ultils;
+use Illuminate\Http\Request;
+
+final class CommentMain extends CommentBase
+{
+
+    public static function create(Request $request  )
+    {
+
+        $obj = null;
+        $module =   $request->module;
+        $commentBase = null;
+        $url = "";
+
+        //Cấu hình các loại chứng từ cụ thể sẽ phát triển sau  vào bên dưới
+        //Mỗi chứng từ sẽ tương ứng 1 class con kế thừa từ class
+       // dd($request->module);
+       
+        switch ($module) {
+            case Ultils::$MODULE_PAYREQUEST_MODEL:
+
+                $obj = Payrequest::find($request->object_id);
+                if ($obj){
+                    $url =  Ultils::$URL_PAYMENT_REQUEST_VIEW . $request->object_id;
+                }
+
+               break;
+            case Ultils::$MODULE_PRICE:
+
+                $obj = PriceReq::find($request->object_id);
+                if ($obj){
+                    $url =  Ultils::$URL_PRICE_VIEW . $request->object_id;
+                }
+               
+
+               break;
+            case Ultils::$MODULE_REPORT:
+
+                $obj = Document::find($request->object_id);
+                if ($obj){
+                    $url =  Ultils::$URL_DOCUMENT_VIEW . $request->object_id;
+                }
+               
+
+               break;
+               case Ultils::$MODULE_ISSUE:
+
+                $obj = Issue::find($request->object_id);
+                if ($obj){
+                    $url =  Ultils::$URL_ISSUE_VIEW . $request->object_id;
+                }
+                break;
+            case Ultils::$MODULE_CARS:
+
+                $obj = Car::find($request->object_id);
+                if ($obj){
+                    $url =  Ultils::$URL_CAR_VIEW . $request->object_id;
+                }
+
+               break;
+            default:
+
+                break;
+        }
+        //dd($obj );
+        if($obj){
+            $commentBase = new CommentBase($request,$obj,$url);
+          
+
+        }
+      
+        return $commentBase;
+    }
+}
